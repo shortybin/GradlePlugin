@@ -1,0 +1,35 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+gradlePlugin {
+    plugins {
+        // 声明插件信息，这里的 hello 名字随意
+        bin {
+            // 插件ID
+            id = 'com.shotrybin.plugin.bin'
+            // 插件的实现类
+            implementationClass = 'com.shotrybin.binplugin.BinPlugin'
+        }
+    }
+}
+publishing {
+    publications {
+        // 这里的 hello 可以任意命名
+        bin(MavenPublication) {
+            // 插件的组ID，建议设置为插件的包名
+            groupId = 'com.shotrybin.plugin'
+            // 翻译过来是 工件ID，我的理解是插件的名字
+            artifactId = 'bin'
+            version = '1.0.0'
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            // $rootDir 表示你项目的根目录
+            url = "$rootDir/repo"
+        }
+    }
+}
