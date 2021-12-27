@@ -27,11 +27,11 @@
         {
           "name": "bin-1.0.0.jar",
           "url": "bin-1.0.0.jar",
-          "size": 2125,
-          "sha512": "2454769684d1e7bd42d3509547863b1c2d243695d68dbf45943e17ee33fec4bae227ccd3ed1c9c6d706a84333e3d26a3cfcc744507309a666a872127011ac660",
-          "sha256": "378871922420eeee72913ee12f76f43cd77a4efaf5939c834e2698dbee227d8c",
-          "sha1": "0278f9048e87f647ff4746e15e4c5f9ec03c2d25",
-          "md5": "7fddad07cb96fa979dc3c792569048f6"
+          "size": 4446,
+          "sha512": "5db4b8c675850de833caf95987ebb5c6eaa91e5887cba46e454cee20660be0013d268d0aadfb4a7b5e50df7e4ac9af9e67ed4e2029405db55de64543d6172f70",
+          "sha256": "8f7c9f3a34c3223b2f5b2bb126d3d693ac0afeb6911d8b23b8fa3cf1d5186364",
+          "sha1": "c9efb1ed2974cdd199b5f3056f5eb05d6fdfd784",
+          "md5": "b8570f18b86226b0a0793bacfc8e5cf2"
         }
       ]
     },
@@ -44,15 +44,38 @@
         "org.gradle.libraryelements": "jar",
         "org.gradle.usage": "java-runtime"
       },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.0.4"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.6"
+          }
+        },
+        {
+          "group": "commons-codec",
+          "module": "commons-codec",
+          "version": {
+            "requires": "1.15"
+          }
+        }
+      ],
       "files": [
         {
           "name": "bin-1.0.0.jar",
           "url": "bin-1.0.0.jar",
-          "size": 2125,
-          "sha512": "2454769684d1e7bd42d3509547863b1c2d243695d68dbf45943e17ee33fec4bae227ccd3ed1c9c6d706a84333e3d26a3cfcc744507309a666a872127011ac660",
-          "sha256": "378871922420eeee72913ee12f76f43cd77a4efaf5939c834e2698dbee227d8c",
-          "sha1": "0278f9048e87f647ff4746e15e4c5f9ec03c2d25",
-          "md5": "7fddad07cb96fa979dc3c792569048f6"
+          "size": 4446,
+          "sha512": "5db4b8c675850de833caf95987ebb5c6eaa91e5887cba46e454cee20660be0013d268d0aadfb4a7b5e50df7e4ac9af9e67ed4e2029405db55de64543d6172f70",
+          "sha256": "8f7c9f3a34c3223b2f5b2bb126d3d693ac0afeb6911d8b23b8fa3cf1d5186364",
+          "sha1": "c9efb1ed2974cdd199b5f3056f5eb05d6fdfd784",
+          "md5": "b8570f18b86226b0a0793bacfc8e5cf2"
         }
       ]
     }

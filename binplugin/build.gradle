@@ -3,6 +3,12 @@ plugins {
     id 'maven-publish'
 }
 
+dependencies {
+    implementation "com.android.tools.build:gradle:7.0.4"
+    implementation "commons-io:commons-io:2.6"
+    implementation "commons-codec:commons-codec:1.15"
+}
+
 gradlePlugin {
     plugins {
         // 声明插件信息，这里的 hello 名字随意

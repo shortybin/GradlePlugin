@@ -10,4 +10,24 @@
   <groupId>GradlePlugin</groupId>
   <artifactId>binplugin</artifactId>
   <version>unspecified</version>
+  <dependencies>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>gradle</artifactId>
+      <version>7.0.4</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.6</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.15</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
 </project>
